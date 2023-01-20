@@ -1,0 +1,98 @@
+.by-container {
+  width: 100%;
+  max-width: 480px;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  margin: 0 auto;
+}
+
+/* MARGINS */
+.mb-s {
+  margin-bottom: $small;
+}
+.mt-s {
+  margin-top: $small;
+}
+.my-s {
+  margin-top: $small;
+  margin-bottom: $small;
+}
+.mb-m {
+  margin-bottom: $medium;
+}
+.mt-m {
+  margin-top: $medium;
+}
+.my-m {
+  margin-top: $medium;
+  margin-bottom: $medium;
+}
+.mb-l {
+  margin-bottom: $large;
+}
+.mt-l {
+  margin-top: $large;
+}
+.my-l {
+  margin-top: $large;
+  margin-bottom: $large;
+}
+.mb-xl {
+  margin-bottom: $xlarge;
+}
+.mt-xl {
+  margin-top: $xlarge;
+}
+.my-xl {
+  margin-top: $xlarge;
+  margin-bottom: $xlarge;
+}
+
+/* PADDINGS */
+.pb-s {
+  padding-bottom: $small;
+}
+.pt-s {
+  padding-top: $small;
+}
+.py-s {
+  padding-top: $small;
+  padding-bottom: $small;
+}
+.pb-m {
+  padding-bottom: $medium;
+}
+.pt-m {
+  padding-top: $medium;
+}
+.py-m {
+  padding-top: $medium;
+  padding-bottom: $medium;
+}
+.pb-l {
+  padding-bottom: $large;
+}
+.pt-l {
+  padding-top: $large;
+}
+.py-l {
+  padding-top: $large;
+  padding-bottom: $large;
+}
+.pb-xl {
+  padding-bottom: $xlarge;
+}
+.pt-xl {
+  padding-top: $xlarge;
+}
+.py-xl {
+  padding-top: $xlarge;
+  padding-bottom: $xlarge;
+}
+
+/* FLEX */
+.u-flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

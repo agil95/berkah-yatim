@@ -1,0 +1,28 @@
+.fundraiser{
+    text-align: center;
+}
+
+.fundraiser-tittle{
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.fundraiser-image{
+    max-width: 165pt;
+    display: block;
+    margin: 50px auto;
+}
+
+.fundraiser-link{
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 30px 0;
+    overflow-y: hidden;
+}
+
+.fundraiser-button{
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 85pt;
+}

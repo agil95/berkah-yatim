@@ -1,0 +1,98 @@
+@import 'variables';
+
+.summary {
+  &-payment {
+    position: relative;
+    padding-top: $large;
+    padding-bottom: $large;
+    &-nominal {
+      font-size: (27rem/$font-size-base);
+      font-weight: 600;
+      text-align: center;
+    }
+    &__btn-copy {
+      color: $primary;
+      font-weight: 600;
+      position: absolute;
+      top: 50%;
+      right: $large;
+      transform: translateY(-50%);
+    }
+  }
+  &-doa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &-detail {
+    background-color: $gray;
+    border: 1px solid $gray-soft;
+    padding: $medium $large;
+    border-radius: 4px;
+    &-total {
+      border-bottom: 1px solid $gray-soft;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: $small;
+      padding-bottom: $small;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    &-transfer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &__img {
+      display: inline-block;
+      height: 24px;
+      flex: 0 0 64px;
+      object-fit: contain;
+    }
+    &__text {
+      flex: 1 0 0;
+      padding-left: $large;
+      padding-right: $medium;
+    }
+    &__btn-copy {
+      flex: 0 0 24px;
+      color: $primary;
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+  &-share {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .btn {
+      &:first-child {
+        margin-right: $medium;
+      }
+      &:last-child {
+        margin-left: $medium;
+      }
+    }
+  }
+  &-status {
+    &__img {
+      height: 120px;
+      width: 165px;
+      object-fit: contain;
+      display: block;
+      margin: $xlarge auto;
+    }
+    &__text {
+      width: 264px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

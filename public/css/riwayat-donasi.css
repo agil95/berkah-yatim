@@ -1,0 +1,89 @@
+.m-0{
+    margin: 0 !important;
+}
+#content{
+    background-color: white !important;
+}
+
+.by-container{
+    padding: 0 !important;
+}
+
+.header-list{
+    padding: 10px 15px;
+    font-size: 11px;
+    background-color: #f2f3f4 !important;
+}
+
+.header-list:not(:first-child){
+    margin-top: 10px;
+}
+.list-donasi{
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #f2f3f4;
+}
+
+.list-donasi p, .list-donasi button{
+    font-size: 10px;
+}
+.title-donasi-item{
+    margin-top: 0 !important;
+    font-weight: 800 !important;
+    font-size: 1rem !important;
+}
+.btn-status{
+    text-align: center;
+    border-radius: 15px !important;
+    padding: 4px !important;
+    font-size: 2.5vw !important;
+    width: 100% !important;
+    border: solid #FC5000 !important;
+    color: grey  !important;
+    background-color: white !important;
+    border-width: thin !important;
+    text-transform: capitalize;
+}
+.btn-status.pending{
+    color: #FC5000 !important;
+    background-color: #FFEEE6 !important;
+}
+.btn-status.success{
+    color: #FC5000 !important;
+    font-weight: 600 !important;
+}
+.btn-status.expire, .btn-status.expired{
+    border: solid gray !important;
+    color:gray !important;
+    border-width: thin !important;
+}
+
+.btn-status.cancel{
+    border: solid gray !important;
+    color:gray !important;
+    border-width: thin !important;
+}
+.btn-status.settlement{
+    color: #FC5000 !important;
+}
+
+@media (min-width: 768px) {
+    .btn-status{
+        font-size: 12px !important;
+    }
+}
+
+.img-donasi{
+    border-radius: 5px;
+}
+
+.donation-item-loading{
+    padding: 15px !important;
+}
+
+.donation-item__img{
+    margin: 0 !important;
+    width: 100% !important;
+    height: 80px !important;
+    padding: 15px 30px !important;
+}

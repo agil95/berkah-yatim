@@ -1,0 +1,45 @@
+.fundraiser{
+}
+
+.fundraiser-list{
+    background-color: #FAFAFA;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.fundraiser-list-title{
+    font-weight: bold;
+    color:#FC5000
+}
+
+.fundraiser-list-image{
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.fundraiser-list-owner{
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.fundraiser-list-participant{
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.fundraiser-list-price{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.btn-propose-fundraiser{
+    width: 80%;
+    margin: 20px 0 5px 0;
+    border-radius: 4px;
+    border: 1px solid #FC5000;
+    font-size: 16px;
+    box-shadow: none;
+    display: inline-block;
+}

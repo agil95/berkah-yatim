@@ -1,0 +1,32 @@
+// Layout
+$gutter: 16px;
+$small: 6px;
+$medium: 8px;
+$large: 16px;
+$xlarge: 24px;
+
+// Typography
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-size-base: 12;
+$font-size-base-px: 12px;
+$font-size-title: (18rem/$font-size-base);
+$font-size-subtitle: (16rem/$font-size-base);
+$font-size-subsubtitle: (14rem/$font-size-base);
+$font-weight: 400;
+$line-height-base: 1.6;
+$text-black: #4A4A4A;
+$text-gray: #989898;
+
+// Colors
+$primary-light: #FFDBCA;
+$primary: #FC5000;
+$primary-dark: #FC5000;
+$accent: #632000;
+$gray: #F5F5F5;
+$gray-bg: #F2F3F4;
+$gray-soft: #E8E8E8;
+$yellow: #FFFACB;
+$yellow-dark: #FAEA56;
+
+// Styles
+$border-gray: 1px solid #D8D8D8;

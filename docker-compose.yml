@@ -1,0 +1,52 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: agil
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: berkah-yatim
+    container_name: berkah-yatim-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    networks:
+      - berkahyatim
+
+  db:
+    image: mysql:5.7
+    container_name: berkah-yatim-db
+    restart: unless-stopped
+    command: --max_allowed_packet=32505856
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+    networks:
+      - berkahyatim
+
+  nginx:
+    image: nginx:alpine
+    container_name: berkah-yatim-nginx
+    restart: unless-stopped
+    ports:
+      - 7000:80
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d/
+    networks:
+      - berkahyatim
+
+networks:
+  berkahyatim:
+    driver: bridge
+    name: berkahyatim
